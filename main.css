@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #2C6196, #0A3A69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+    }
+    
+    .form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 15px;
+    min-height: 250px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    }
+    
+    input {
+    display: block;
+    border-radius:20px;
+    outline: none;
+    padding: 15px 10px;
+    margin: 30px;
+    border: solid 1px ;
+    background: none;
+    color: white;
+    width: 200px;
+    transition: border-color 1s;
+    }
+    input:focus {
+    border-color: royalblue;
+    }
+    
+    .form button {
+    padding: 10px;
+    border-radius:20px;
+    color: white;
+    background: royalblue;
+    border: none;
+    width: 200px;
+    margin-left: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    }
+    .form button:hover {
+    background: rgb(114, 149, 255);
+    }
+    
+    .action {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .load {
+    position: relative;
+    margin: 2px 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    .load.show {
+    border-bottom-color: royalblue;
+    }
+    
+    .form a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    text-align: center;
+    transition: 0.5s;
+    }
+    .form a:hover {
+    color: royalblue;
+    }
+    
+    .login {
+    display: none;
+    }
+   .reg {
+    display: none;
+    }
+    
+    .show-page {
+    display: block;
+    animation: show-page 1s;
+    }
+    
+    @keyframes show-page {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        color: #fff;
+        font-size: 60px;
+    }
